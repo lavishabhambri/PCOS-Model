@@ -16,32 +16,35 @@
 
 <body>
   <div class="login">
-<h1>Predict PCOS</h1>
+  <h1 class="ml-predict-heading">Predict PCOS</h1>
 
    <!-- Main Input For Receiving Query to our ML -->
   <form action="{{ url_for('predict')}}"method="post">
-    <div class="row">
-      <div class="col-lg-6">
-        <input type="text" name="age" placeholder="Age (yrs)" required="required" />
-        <input type="text" name="weight" placeholder="Weight (Kg)" required="required" />
-        <input type="text" name="height" placeholder="Height (Cm)" required="required" />
-        <input type="text" name="cycleLength" placeholder="Cycle length (days)" required="required" />
-        <input type="text" name="marraige" placeholder="Marraige Status (Yrs)" required="required" />
-        <input type="text" name="pregnant" placeholder="Pregnant (0/1)" required="required" />
-        <input type="text" name="abortions" placeholder="No. of aborptions" required="required" />
-        <input type="text" name="weight_gain" placeholder="Weight gain (0/1)'" required="required" />
+    <div class="container ml-container">
+      <div class="row">
+        <div class="col-lg-6">
+          <input type="text" name="age" placeholder="Age (yrs)" required="required" />
+          <input type="text" name="weight" placeholder="Weight (Kg)" required="required" />
+          <input type="text" name="height" placeholder="Height (Cm)" required="required" />
+          <input type="text" name="cycleLength" placeholder="Cycle length (days)" required="required" />
+          <input type="text" name="marraige" placeholder="Marraige Status (Yrs)" required="required" />
+          <input type="text" name="pregnant" placeholder="Pregnant (0/1)" required="required" />
+          <input type="text" name="abortions" placeholder="No. of aborptions" required="required" />
+          <input type="text" name="weight_gain" placeholder="Weight gain (0/1)'" required="required" />
 
+        </div>
+        <div class="col-lg-6">
+          <input type="text" name="hair" placeholder="Hair growth (0/1)" required="required" />
+          <input type="text" name="skin_darkening" placeholder="Skin darkening (0/1)" required="required" />
+          <input type="text" name="hair_loss" placeholder="Hair loss (0/1)" required="required" />
+          <input type="text" name="pimples" placeholder="Pimples (0/1)" required="required" />
+          <input type="text" name="fast_food" placeholder="Fast food (0/1)" required="required" />
+          <input type="text" name="exercise" placeholder="Regular Exercise (0/1)" required="required" />
+          <input type="text" name="bp_Sys" placeholder="BP _Systolic (mmHg)" required="required" />
+          <input type="text" name="bp_dias" placeholder="BP _Diastolic (mmHg)" required="required" />
+        </div>
       </div>
-      <div class="col-lg-6">
-        <input type="text" name="hair" placeholder="Hair growth (0/1)" required="required" />
-        <input type="text" name="skin_darkening" placeholder="Skin darkening (0/1)" required="required" />
-        <input type="text" name="hair_loss" placeholder="Hair loss (0/1)" required="required" />
-        <input type="text" name="pimples" placeholder="Pimples (0/1)" required="required" />
-        <input type="text" name="fast_food" placeholder="Fast food (0/1)" required="required" />
-        <input type="text" name="exercise" placeholder="Regular Exercise (0/1)" required="required" />
-        <input type="text" name="bp_Sys" placeholder="BP _Systolic (mmHg)" required="required" />
-        <input type="text" name="bp_dias" placeholder="BP _Diastolic (mmHg)" required="required" />
-      </div>
+
     </div>
 
 
